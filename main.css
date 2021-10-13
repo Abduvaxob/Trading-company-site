@@ -42,6 +42,8 @@ p {
     position: relative;
     height: 637px;
     width: 100%;
+    background-image: url(./images/qingdaou.jpg);
+    background-size: cover;
 }
 .header img {
     width: 100%;
@@ -55,11 +57,13 @@ p {
     opacity: 0.6;
     height: 100%;
     width: 100%;
+    z-index: 1;
 }
 .nav_bar {
     position: absolute;
     top: 50px;
     width: 100%;
+    z-index: 3;
 }
 .rectangle_logo {
     position: absolute;
@@ -97,8 +101,8 @@ p {
     
 }
 .header_info {
-    position: absolute;
     margin-top: 51px;
+    z-index: 2;
 }
 
 .header h4 {
@@ -128,7 +132,8 @@ p {
     }
 .header_services {
     position: absolute;
-    bottom: -97px;
+    bottom: -110px;
+    z-index: 2;
 }
 
 .service_item {
@@ -145,7 +150,9 @@ p {
 .about {
     margin-top: 90px;
 }
-
+.about h2 {
+    color: #02134F;
+}
 .about img {
     max-width: 100%;
     max-height: 100%;
@@ -310,6 +317,9 @@ p {
     .services_mobile {
         margin-top: 69px;
         text-align: center;
+    }
+    .services_mobile h2 {
+        color: #02134F;
     }
     .services_mobile h3 {
         margin-top: 53px;
